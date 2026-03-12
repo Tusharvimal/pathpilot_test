@@ -1,0 +1,41 @@
+course_id,course_name,tier,department,best_modality,difficulty,pass_rate
+C001,Intro to Programming,1,CS,hands_on,0.18,0.93
+C002,Discrete Mathematics,1,MATH,analytical,0.22,0.94
+C003,Data Literacy,1,DS,visual,0.18,0.97
+C004,Web Fundamentals,1,SE,hands_on,0.2,0.96
+C005,Intro to Databases,1,IT,analytical,0.2,0.97
+C006,Computer Systems,1,CS,analytical,0.17,0.95
+C007,Probability and Stats,1,MATH,analytical,0.25,0.92
+C008,UX Basics,1,SE,visual,0.23,0.97
+C009,Intro to Networking,1,IT,visual,0.24,0.97
+C010,Linear Algebra,1,MATH,analytical,0.24,0.95
+C011,Data Structures,2,CS,analytical,0.43,0.87
+C012,Algorithms,2,CS,analytical,0.46,0.85
+C013,Statistical Inference,2,MATH,analytical,0.38,0.85
+C014,Exploratory Data Analysis,2,DS,visual,0.39,0.84
+C015,Database Systems,2,IT,analytical,0.37,0.81
+C016,Frontend Development,2,SE,hands_on,0.4,0.82
+C017,Operating Systems,2,CS,analytical,0.41,0.81
+C018,Network Fundamentals,2,IT,visual,0.4,0.86
+C019,Object Oriented Programming,2,CS,hands_on,0.45,0.84
+C020,Applied Statistics,2,MATH,analytical,0.41,0.85
+C021,UI/UX Design,2,SE,visual,0.4,0.88
+C022,Systems Programming,2,CS,hands_on,0.42,0.83
+C023,Machine Learning,3,DS,analytical,0.61,0.74
+C024,Deep Learning,3,DS,analytical,0.68,0.77
+C025,Software Engineering,3,SE,hands_on,0.61,0.73
+C026,Distributed Systems,3,CS,analytical,0.7,0.72
+C027,Data Pipelines,3,DS,hands_on,0.68,0.73
+C028,Computer Vision,3,DS,visual,0.62,0.72
+C029,NLP Fundamentals,3,DS,exploratory,0.6,0.78
+C030,Cloud Architecture,3,IT,exploratory,0.68,0.77
+C031,Cybersecurity Fundamentals,3,IT,analytical,0.67,0.76
+C032,Mobile Development,3,SE,hands_on,0.67,0.78
+C033,AI Systems Capstone,4,DS,exploratory,0.86,0.7
+C034,Full Stack Capstone,4,SE,hands_on,0.79,0.65
+C035,Data Engineering Capstone,4,DS,hands_on,0.82,0.71
+C036,Systems Capstone,4,CS,analytical,0.79,0.68
+C037,Cloud Capstone,4,IT,exploratory,0.87,0.7
+C038,Cybersecurity Capstone,4,IT,analytical,0.84,0.71
+C039,Research Methods Capstone,4,DS,exploratory,0.81,0.67
+C040,Product Engineering Capstone,4,SE,hands_on,0.79,0.65

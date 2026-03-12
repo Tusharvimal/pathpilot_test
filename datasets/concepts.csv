@@ -1,0 +1,81 @@
+concept_id,concept_name,domain,difficulty
+K001,Variables and Data Types,programming,0.42
+K002,Control Flow,programming,0.54
+K003,Functions and Recursion,programming,0.5
+K004,Object Oriented Design,programming,0.47
+K005,Memory Management,programming,0.38
+K006,Debugging Techniques,programming,0.38
+K007,Version Control,programming,0.36
+K008,APIs and Interfaces,programming,0.52
+K009,Design Patterns,programming,0.47
+K010,Testing and Validation,programming,0.49
+K011,Concurrency and Threads,programming,0.35
+K012,Data Serialization,programming,0.54
+K013,Command Line Tools,programming,0.52
+K014,Code Optimization,programming,0.39
+K015,Functional Programming,programming,0.39
+K016,Set Theory,mathematics,0.59
+K017,Logic and Proofs,mathematics,0.61
+K018,Probability Distributions,mathematics,0.65
+K019,Hypothesis Testing,mathematics,0.64
+K020,Linear Algebra Basics,mathematics,0.61
+K021,Matrix Operations,mathematics,0.67
+K022,Calculus Fundamentals,mathematics,0.58
+K023,Gradient and Derivatives,mathematics,0.61
+K024,Optimization Theory,mathematics,0.62
+K025,Graph Theory,mathematics,0.64
+K026,Bayesian Reasoning,mathematics,0.71
+K027,Statistical Modeling,mathematics,0.59
+K028,Regression Analysis,mathematics,0.65
+K029,Dimensionality Reduction,mathematics,0.67
+K030,Information Theory,mathematics,0.56
+K031,Data Cleaning,data_science,0.62
+K032,Exploratory Analysis,data_science,0.53
+K033,Feature Engineering,data_science,0.51
+K034,Model Evaluation,data_science,0.69
+K035,Overfitting and Regularization,data_science,0.69
+K036,Cross Validation,data_science,0.66
+K037,Neural Networks,data_science,0.56
+K038,Backpropagation,data_science,0.52
+K039,Convolutional Networks,data_science,0.64
+K040,Recurrent Networks,data_science,0.59
+K041,Transfer Learning,data_science,0.52
+K042,Data Pipelines,data_science,0.6
+K043,Model Deployment,data_science,0.51
+K044,Natural Language Processing,data_science,0.68
+K045,Reinforcement Learning,data_science,0.55
+K046,Process Management,systems,0.58
+K047,Memory Allocation,systems,0.51
+K048,File Systems,systems,0.55
+K049,Networking Protocols,systems,0.56
+K050,TCP IP Stack,systems,0.49
+K051,DNS and Routing,systems,0.64
+K052,Distributed Computing,systems,0.61
+K053,Load Balancing,systems,0.64
+K054,Fault Tolerance,systems,0.63
+K055,Containerization,systems,0.57
+K056,Cloud Services,systems,0.63
+K057,Microservices,systems,0.47
+K058,Security Protocols,systems,0.49
+K059,Encryption and Hashing,systems,0.46
+K060,Authentication Systems,systems,0.52
+K061,Relational Models,databases,0.48
+K062,SQL Queries,databases,0.45
+K063,Database Normalization,databases,0.57
+K064,Indexing and Performance,databases,0.47
+K065,Transactions and ACID,databases,0.46
+K066,NoSQL Databases,databases,0.51
+K067,Query Optimization,databases,0.43
+K068,Data Warehousing,databases,0.56
+K069,ETL Processes,databases,0.41
+K070,Database Security,databases,0.6
+K071,User Research,design,0.4
+K072,Wireframing,design,0.29
+K073,Prototyping,design,0.25
+K074,Accessibility Standards,design,0.41
+K075,Responsive Design,design,0.39
+K076,Color Theory,design,0.4
+K077,Typography,design,0.4
+K078,Interaction Design,design,0.26
+K079,Usability Testing,design,0.32
+K080,Design Systems,design,0.27
