@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #0f1117;
+  color: #e1e4e8;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* ─── Header ─── */
+.header {
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  padding: 20px 40px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #58a6ff;
+  font-weight: 700;
+}
+
+.header p {
+  color: #8b949e;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.tabs {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 8px 20px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: transparent;
+  color: #8b949e;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: #e1e4e8;
+  border-color: #58a6ff;
+}
+
+.tab.active {
+  background: #1f6feb;
+  color: white;
+  border-color: #1f6feb;
+}
+
+/* ─── Content ─── */
+.content {
+  padding: 30px 40px;
+  max-width: 1200px;
+}
+
+/* ─── Cards ─── */
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #58a6ff;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 15px;
+  color: #e1e4e8;
+  margin-bottom: 8px;
+}
+
+/* ─── Select / Input ─── */
+select, input {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  color: #e1e4e8;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 400px;
+}
+
+select:focus, input:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+/* ─── Buttons ─── */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #1f6feb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #388bfd;
+}
+
+/* ─── Risk Badges ─── */
+.risk-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.risk-low {
+  background: #0d4429;
+  color: #3fb950;
+}
+
+.risk-medium {
+  background: #4a3000;
+  color: #d29922;
+}
+
+.risk-high {
+  background: #5a1e1e;
+  color: #f85149;
+}
+
+/* ─── Tables ─── */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.table th {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #30363d;
+  color: #8b949e;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #21262d;
+  font-size: 14px;
+}
+
+.table tr:hover {
+  background: #1c2128;
+}
+
+/* ─── Grid ─── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ─── Profile ─── */
+.profile-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #58a6ff;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #8b949e;
+  margin-top: 2px;
+}
+
+/* ─── Progress Bar ─── */
+.prob-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #21262d;
+  margin-top: 6px;
+}
+
+.prob-low {
+  background: #58a6ff;  /* blue */
+}
+
+.prob-medium {
+  background: #d29922;  /* amber */
+}
+
+.prob-high {
+  background: #da3633;  /* red */
+}
+
+/* ─── Loading ─── */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #8b949e;
+}
+
+/* ─── Mode Toggle ─── */
+.mode-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
