@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 from torch_geometric.nn import SAGEConv, GATConv
 
+## TSNE
+
 class GraphSAGE(torch.nn.Module):
     def __init__(self, hidden_dim):
         super().__init__()
@@ -22,6 +24,8 @@ class GraphSAGE(torch.nn.Module):
         })
 
         self.dropout = nn.Dropout(0.3)
+        self.student_proj = nn.Linear(5, hidden_dim)
+        self.layer_norm = nn.LayerNorm(hidden_dim)
 
         self.task_a_head = nn.Linear(hidden_dim*4, 3)
         # self.task_a_head = nn.Sequential(
@@ -75,9 +79,11 @@ class GraphSAGE(torch.nn.Module):
         )
 
         # Relu
+        x_student_skip = self.student_proj(x_student) * 0.3
         x_course_1 = self.dropout(torch.relu(course_from_students + course_from_course))
         x_concept_1 = self.dropout(torch.relu(concepts_from_students + concepts_from_course + concepts_from_concepts))
-        x_student_1 = self.dropout(torch.relu(student_from_course_l1 + student_from_concept_l1))
+        x_student_1 = self.layer_norm(student_from_course_l1 + student_from_concept_l1 + x_student_skip)
+        x_student_1 = self.dropout(torch.relu(x_student_1))
 
 
         ## Layer 2
@@ -97,8 +103,24 @@ class GraphSAGE(torch.nn.Module):
 
         return x_student_1, x_course_1, x_concept_1
     
-# model = GraphSAGE(hidden_dim=256)
-# out = model(data)
-# print(out[0].shape) 
-# print(out[1].shape) 
-# print(out[2].shape) 
+
+class LinkPredictor(nn.Module):
+    def __init__(self, emb_dim):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(emb_dim * 4, 128),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            nn.Linear(128, 64),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            nn.Linear(64, 1)
+        )
+
+    def forward(self, src_emb, dst_emb):
+        pair = torch.concat([src_emb, dst_emb, src_emb - dst_emb, src_emb * dst_emb], dim = 1)
+        return self.net(pair).squeeze()
+
+# link_model = LinkPredictor(emb_dim=256)
+# link_model.load_state_dict(torch.load('models/task_b_link_model.pt', weights_only=True))
+# link_model.eval()
