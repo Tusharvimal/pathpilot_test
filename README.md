@@ -55,7 +55,7 @@ PathPilot/
 ├── model.py                         # GraphSAGE model definition
 ├── utils.py                         # Shared utilities
 ├── api.py                           # FastAPI backend server
-├── build_graph.ipynb                # Graph construction + Task A training
+├── taskA.ipynb                      # Graph construction + Task A training
 ├── taskB.ipynb                      # Task B — Concept Sequencing
 ├── taskC.ipynb                      # Task C — Learning Modality Match
 ├── taskD.ipynb                      # Task D — Course Improvement Recommender
